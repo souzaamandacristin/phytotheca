@@ -10,8 +10,19 @@
 @media(max-width:390px){.top,.content,.detail{padding-left:18px;padding-right:18px}.hero{padding-left:20px;padding-right:20px}#list{gap:9px}.thumb{height:100px}.plant .plant-name{padding:10px 9px 0}.plant strong{font-size:17px}.tabs{gap:8px}.tabs button{font-size:12px;padding:10px}}
 
 /* Fotografias botânicas por espécie, sem aplicar a mesma foto a todas as fichas. */
-.thumb.has-photo,.detail-hero.has-photo{background-size:cover!important;background-repeat:no-repeat!important;background-position:center center!important;font-size:0!important}
-.thumb.has-photo{background-position:center center!important}
+.thumb.has-photo{
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  font-size:0!important;
+}
+
+.detail-hero.has-photo{
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  font-size:0!important;
+}
 /* PHYTOTHECA - revisão visual 21/10/2026 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 html,body,#app{background:#faf9f4!important;color:#253a2e!important}
