@@ -1,0 +1,36 @@
+/* PHYTOTHECA — tema claro botânico. Mantém o conteúdo científico existente. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--bg:#fcfbf7;--panel:#ffffff;--text:#1d2923;--muted:#526158;--mint:#1c6346;--accent:#467b5e;--line:#dce6dc}
+html{background:#e8eee7}body{background:#e8eee7;color:var(--text);font-family:'DM Sans',Arial,sans-serif}
+#app{background:var(--bg);box-shadow:0 0 45px #17382216}
+.top h2,.detail h2{color:#183f2e;font-family:'Playfair Display',Georgia,serif}
+.top h2{font-size:clamp(35px,7vw,49px)}
+.eyebrow,.count{color:#366d4e}.small{color:#536258}
+.search,.field input{background:#fff;color:#24342b;border:1px solid #d5dfd5;box-shadow:0 3px 15px #23442b09}
+.search::placeholder,.field input::placeholder{color:#66736c}
+/* Grade de plantas, mantendo a ordenação existente no JavaScript */
+#list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch}
+#list .plant{min-width:0;display:flex;flex-direction:column;align-items:stretch;gap:0;position:relative;padding:0 0 14px;border:1px solid #e1e8dd;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 4px 16px #1939220b}
+#list .plant:nth-child(4n+1){background:#eef4e9}#list .plant:nth-child(4n+2){background:#f8efdd}#list .plant:nth-child(4n+3){background:#f5eae6}#list .plant:nth-child(4n+4){background:#eaf0f5}
+#list .thumb{width:100%;height:105px;border-radius:0;background:linear-gradient(135deg,#dce9d4,#edf3e8);color:#326a4a;font-size:35px}
+#list .plant strong{display:block;padding:13px 12px 0;color:#183c2b;font:italic 600 clamp(17px,3.6vw,23px)/1.18 'Playfair Display',Georgia,serif;overflow-wrap:anywhere}
+#list .plant em{padding:6px 12px 0;color:#526259;font:normal 12px/1.4 'DM Sans',Arial,sans-serif}
+#list .plant .arrow{position:absolute;right:10px;bottom:12px;color:#24583c;font-size:20px}
+/* Página de monografia */
+.detail-hero{height:190px;background:linear-gradient(135deg,#dbe9d7,#edf3e8);color:#28694a}
+.detail{background:#fcfbf7}.back{color:#1f6044;font-weight:600}
+.detail h2{font:italic 600 clamp(35px,7vw,52px)/1.13 'Playfair Display',Georgia,serif;color:#163b2b}
+.latin{color:#56675a}.favorite{color:#225d40}
+.tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;overflow:visible;padding:20px 0}
+.tabs button{white-space:normal;min-height:66px;border:1px solid #dce4d8;border-radius:13px;padding:12px;background:#f0f4ec;color:#233c2d;font-size:13px;font-weight:600;text-align:left}
+.tabs button:nth-child(4n+2){background:#f7efe4}.tabs button:nth-child(4n+3){background:#e9f0f7}.tabs button:nth-child(4n+4){background:#f5ebee}
+.tabs button.active{background:#1d6345;color:#fff;border-color:#1d6345}
+.section{border-bottom:1px solid #dbe3da;padding:24px 0}.section h3{color:#173d2b;font:600 clamp(25px,5.5vw,32px)/1.15 'Playfair Display',Georgia,serif}
+.section p{color:#27372d;font-size:15px;line-height:1.8;white-space:pre-line}
+.section .label{color:#366f50}.safety h3{color:#8d453b}
+.notice{border-left:3px solid #a77d55;border-radius:0 10px 10px 0;background:#f5f1e7;color:#344339;padding:14px 16px;font-size:13px}
+.nav{background:#fff;border-top:1px solid #dce4dc;box-shadow:0 -5px 20px #152d1c0a}.nav button{color:#65736b}.nav button.active{color:#1a6844}
+.action{background:#1b6747;color:#fff}.result{background:#fff;border-color:#dbe3da;border-radius:14px}.result strong,a{color:#216547}
+/* Home: conserva fotografia original, melhora controles */
+.hero-actions button{background:#f4f7f0;color:#17452f;border-radius:12px}.hero .search{background:#fff;color:#1b2c22;border-color:#fff}.hero-note{color:#f6eee0}
+@media(max-width:390px){#list{gap:9px}#list .thumb{height:85px}#list .plant strong{padding:10px 9px 0;font-size:17px}#list .plant em{padding-left:9px;padding-right:9px}.tabs{gap:8px}.tabs button{min-height:60px;font-size:12px}}
